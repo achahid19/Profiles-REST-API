@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  # Specify the box. For M1/M2 Mac, use an ARM64-compatible box.
+  # Specify the box. Using M1/M2 Mac (ARM64-compatible box).
   config.vm.box = "bento/ubuntu-20.04" # Updated to a more recent version.
   config.vm.box_version = ">= 202105.25.0" # Update the version based on available ones.
   
