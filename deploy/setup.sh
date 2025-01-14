@@ -13,7 +13,7 @@ locale-gen en_GB.UTF-8
 # Install dependencies
 echo "Installing dependencies..."
 apt-get update
-apt-get install -y python3.11 python3.11-venv python3.11-dev sqlite3 python3-pip supervisor nginx git build-essential
+apt-get install -y python3.10 python3.10-venv python3.10-dev sqlite3 python3-pip supervisor nginx git build-essential
 
 # Create project directory
 mkdir -p $PROJECT_BASE_PATH
