@@ -39,7 +39,7 @@ $PROJECT_BASE_PATH/env/bin/pip install -r $PROJECT_BASE_PATH/requirements.txt
 echo "Installing uWSGI..."
 $PROJECT_BASE_PATH/env/bin/pip install uwsgi==2.0.21 || {
     echo "uWSGI installation failed. Attempting with updated build flags..."
-    CFLAGS="-Wno-deprecated-declarations" $PROJECT_BASE_PATH/env/bin/pip install uwsgi==2.0.21
+    CFLAGS="-Wno-deprecated-declarations" $PROJECT_BASE_PATH/env/bin/pip install uwsgi>=2.0.21
 }
 
 # Run migrations and collect static files
