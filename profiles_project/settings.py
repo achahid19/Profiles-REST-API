@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u+_06ia)otekw()#yjxc0=yiqclt^)navw9r(o)v$v1#pj$bes'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 ALLOWED_HOSTS = []
 
@@ -124,3 +124,5 @@ STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'profiles_api.UserProfile' # define the app you wanna retrieve from + name of the model you want to use
                                                 #use this of all our authentication and user registration in our project
+
+STATIC_ROOT = 'static/'
