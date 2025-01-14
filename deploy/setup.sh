@@ -4,6 +4,7 @@ set -e  # Exit immediately if a command exits with a non-zero status
 
 # Configuration
 PROJECT_GIT_URL='https://github.com/achahid19/Profiles-REST-API.git'
+
 PROJECT_BASE_PATH='/usr/local/apps/profiles-rest-api'
 
 echo "Installing system dependencies..."
